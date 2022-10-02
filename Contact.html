@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/style.css" />
+  </head>
+  <body class="font-Poppins">
+    <div class="container mx-auto">
+      <div class="bg-[#DFEDF6] px-6 md:px-20 py-4">
+        <div class="flex items-center justify-between">
+          <img class="w-16 h-16" src="/img/logo.png" alt="" />
+          <!-- Menu links here -->
+          <ul
+            id="menu"
+            class="hidden fixed top-0 right-0 px-10 py-16 bg-[#DFEDF6] z-50 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 space-y-3"
+          >
+            <li class="md:hidden z-90 fixed top-4 right-6">
+              <a
+                href="javascript:void(0)"
+                class="text-right text-white text-4xl"
+                onclick="toggleMenu()"
+                >&times;</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="Our Projects.html"
+                >OUR PROJECTS</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="#"
+                >SERVICES</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="#"
+                >OUR TEAM</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="#"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+            <button
+              class="text-black text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+              onclick="toggleMenu()"
+            >
+              &#9776;
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Our Project-->
+      <h3
+        class="text-2xl py-4 mb-2 text-center font-medium underline decoration-blue-500 underline-offset-8"
+      >
+        CONTACT US
+      </h3>
+
+      <div
+        class="flex flex-col items-center gap-12 font-semibold bg-no-repeat mt-10 bg-cover bg-bottom bg-[url('/img/Rectangle27.svg')]"
+      >
+        <div class="mt-10 flex flex-col items-center">
+          <p class="text-[#259BE9]">Location</p>
+          <p>127 Stoddard Road, Mt. Roskil,</p>
+          <p>Auckland, New Zealand</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-[#259BE9]">Contact Person</p>
+          <p>Mr. Milon Bhuya</p>
+        </div>
+        <div class="flex flex-col items-center pb-4 mb-4">
+          <p class="text-[#259BE9]">Phone</p>
+          <p>+64 21 56 7711</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#DFEDF6] pt-10 flex flex-col gap-2 font-semibold items-center"
+      >
+        <p>SEND US MESSAGE TO</p>
+        <p class="text-[#259BE9]">E-mail</p>
+        <p class="mb-2">milon@limahomes.co.nz</p>
+      </div>
+      <div class="bg-[#000000] h-20"></div>
+    </div>
+
+    <script>
+      var menu = document.getElementById("menu");
+      function toggleMenu() {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("w-full");
+      }
+    </script>
+  </body>
+</html>

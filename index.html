@@ -1,0 +1,228 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/style.css" />
+  </head>
+  <body class="font-Poppins">
+    <div class="container mx-auto">
+      <div class="bg-[#DFEDF6] px-6 md:px-20 py-4">
+        <div class="flex items-center justify-between">
+          <img class="w-16 h-16" src="/img/logo.png" alt="" />
+          <!-- Menu links here -->
+          <ul
+            id="menu"
+            class="hidden fixed top-0 right-0 px-10 py-16 bg-[#DFEDF6] z-50 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 space-y-3"
+          >
+            <li class="md:hidden z-90 fixed top-4 right-6">
+              <a
+                href="javascript:void(0)"
+                class="text-right text-white text-4xl"
+                onclick="toggleMenu()"
+                >&times;</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="#"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="Our Projects.html"
+                >OUR PROJECTS</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="#"
+                >SERVICES</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="#"
+                >OUR TEAM</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:opacity-100 font-medium hover:border-b-2 border-sky-500 duration-300"
+                href="Contact.html"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+            <button
+              class="text-black text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+              onclick="toggleMenu()"
+            >
+              &#9776;
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Hero image-->
+      <div
+        class="relative md:bg-cover md:bg-center md:h-[763px]"
+        style="background-image: url('/img/hero.jpg')"
+      >
+        <!--Medium device image-->
+        <div
+          class="hidden md:block md:absolute md:bottom-7 md:left-40 md:bg-[#D9D9D9] md:px-4 md:py-3 md:font-bold md:text-[#0F4E77]"
+        >
+          CALL @+64 21 56 7711
+        </div>
+        <div
+          class="hidden md:absolute md:w-[725px] md:h-[307px] md:bg-[#DFEDF6] md:bg-opacity-50 md:right-24 md:top-72 md:flex md:flex-col md:items-center md:justify-center"
+        >
+          <h1 class="font-poppins font-medium text-2xl">
+            YOUR DREAM HOMES IS HERE!
+          </h1>
+          <h2 class="text-[#175883] font-poppins font-semibold">
+            Dream. Build. Live!
+          </h2>
+          <button
+            class="md:mt-8 md:bg-[#259BE9] md:px-6 md:py-2 md:rounded md:text-white"
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+      <img class="md:hidden" src="/img/hero.jpg" alt="" />
+      <!--Mobile Devise image-->
+      <div class="md: container md:grid md:grid-cols-2">
+        <div class="mt-6 p-6 space-y-4">
+          <h1 class="">ABOUT US</h1>
+          <div class="border-2 mt-2 w-24 border-blue-300"></div>
+          <p>
+            Lima Homes is one of the growing local developer companies in New
+            Zealand. Lima’s homes have been being built with passion and
+            excellence with an aim to cater the growing demand of residences by
+            Kiwi families.
+          </p>
+          <p>
+            We are specialized in building more and more contemporary
+            infrastructure and residential edifices. We work with our clients
+            eagerly as well as closely so that we can meet their each and every
+            requirement. We are also functioning on our own ideas and love
+          </p>
+          <p>
+            Our company provides far and above the ground ending along with
+            superiority construction that bring into line with New Zealand’s
+            structure principles. We are at this juncture to endow with full
+            service by means of our skilled and qualified team.
+          </p>
+        </div>
+        <img
+          class="mt-10 px-16 w-full"
+          src="/img/landing page-right-after-hero.jpg"
+          alt=""
+        />
+      </div>
+      <!--Out Project-->
+      <div class="hidden md:grid md:grid-cols-2 md:gap-0 md:mt-20">
+        <div class="md:flex md:flex-col space-y-10 md:bg-[#DFEDF6] relative">
+          <span class="absolute top-12 left-24">OUR PROJECT</span>
+          <span
+            class="absolute top-14 left-24 border-2 w-24 border-[#259BE9]"
+          ></span>
+          <a
+            class="md:absolute md:top-24 md:left-24 md:text-white md:bg-[#259BE9] md:px-4 md:py-2 rounded"
+            >View Gallery</a
+          >
+        </div>
+
+        <img src="/img/landing page-our project.jpg" alt="" />
+      </div>
+      <div class="mt-6 p-6 md:text-center">
+        <div
+          class="border-b-blue-500 border-b-4 inline-block text-2xl py-4 mb-6"
+        >
+          <h3 class="font-medium">OUR PROJECTS</h3>
+        </div>
+        <div class="mt-12 hidden md:flex flex-wrap gap-2 justify-center">
+          <img class="" src="/img/1.svg" alt="" />
+          <img class="" src="/img/2.svg" alt="" />
+          <img class="" src="/img/3.svg" alt="" />
+          <img class="" src="/img/4.svg" alt="" />
+          <img class="" src="/img/5.svg" alt="" />
+          <img class="" src="/img/6.svg" alt="" />
+          <img class="" src="/img/7.svg" alt="" />
+          <img class="" src="/img/8.svg" alt="" />
+          <img class="" src="/img/9.svg" alt="" />
+          <img class="" src="/img/10.svg" alt="" />
+          <img class="" src="/img/11.svg" alt="" />
+          <img class="" src="/img/12.svg" alt="" />
+        </div>
+
+        <div
+          class="md:hidden mt-12 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-y-4 md:gap-x-4"
+        >
+          <img class="" src="/img/1.svg" alt="" />
+          <img class="" src="/img/2.svg" alt="" />
+          <img class="" src="/img/3.svg" alt="" />
+          <img class="" src="/img/4.svg" alt="" />
+          <img class="" src="/img/5.svg" alt="" />
+          <img class="" src="/img/6.svg" alt="" />
+          <img class="" src="/img/7.svg" alt="" />
+          <img class="" src="/img/8.svg" alt="" />
+          <img class="" src="/img/9.svg" alt="" />
+          <img class="" src="/img/10.svg" alt="" />
+          <img class="" src="/img/11.svg" alt="" />
+          <img class="" src="/img/12.svg" alt="" />
+        </div>
+      </div>
+      <div class="bg-[#DFEDF6] p-4 flex flex-col items-center">
+        <h1 class="mb-2 font-bold">CONTACT US</h1>
+        <div class="border-2 border-blue-400 w-24"></div>
+      </div>
+      <div
+        class="flex flex-col items-center gap-12 font-semibold bg-no-repeat bg-cover bg-bottom bg-[url('/img/Rectangle27.svg')]"
+      >
+        <div class="mt-10 flex flex-col items-center">
+          <p class="text-[#259BE9]">Location</p>
+          <p>127 Stoddard Road, Mt. Roskil,</p>
+          <p>Auckland, New Zealand</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-[#259BE9]">Contact Person</p>
+          <p>Mr. Milon Bhuya</p>
+        </div>
+        <div class="flex flex-col items-center pb-4 mb-4">
+          <p class="text-[#259BE9]">Phone</p>
+          <p>+64 21 56 7711</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#DFEDF6] pt-10 flex flex-col gap-2 font-semibold items-center"
+      >
+        <p>SEND US MESSAGE TO</p>
+        <p class="text-[#259BE9]">E-mail</p>
+        <p class="mb-2">milon@limahomes.co.nz</p>
+      </div>
+      <div class="bg-[#000000] h-20"></div>
+    </div>
+
+    <script>
+      var menu = document.getElementById("menu");
+      function toggleMenu() {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("w-full");
+      }
+    </script>
+  </body>
+</html>
